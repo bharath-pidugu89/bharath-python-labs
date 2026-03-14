@@ -40,7 +40,7 @@ def build_rag_system(file_path):
     return rag_chain
 
 # --- Execution ---
-my_rag = build_rag_system(r"C:\Users\Bharath\AI-ML\bharath-python-labs\my_rag_models\chat-with-pdf\Chapter1.pdf")
+my_rag = build_rag_system("./Chapter1.pdf")
 query = "What are the main conclusions of this document?"
 response = my_rag.invoke(query)
 
